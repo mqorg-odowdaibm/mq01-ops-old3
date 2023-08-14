@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: mq01-dev
+  name: mq-deployer
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["secrets", "services"]
+  verbs: ["*"]
+- apiGroups: ["mq.ibm.com"] # mq.ibm.com API group - TBC
+  resources: ["queuemanagers"] # TBC
+  verbs: ["*"]
+- apiGroups: ["networking.k8s.io"] # Kubernetes networking group
+  resources: ["ingresses"]
+  verbs: ["*"]
