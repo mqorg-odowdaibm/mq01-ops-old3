@@ -54,7 +54,6 @@ spec:
         enabled: true
       recoveryLogs:
         enabled: true
-      volumeMode: Filesystem #or Block
   securityContext:
     initVolumeAsRoot: false
   template:
