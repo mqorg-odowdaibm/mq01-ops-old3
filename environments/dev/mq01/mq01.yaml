@@ -54,12 +54,7 @@ spec:
         enabled: true
       recoveryLogs:
         enabled: true
-      accessModes:
-        - ReadWriteOnce
       volumeMode: Filesystem #or Block
-      resources:
-        requests:
-          storage: 1Gi        
   securityContext:
     initVolumeAsRoot: false
   template:
