@@ -18,7 +18,6 @@ spec:
 # The use of the common name field has been deprecated since 2000 and is
 # discouraged from being used.
   commonName: dummy.domain.com
-  isCA: false
   privateKey:
     algorithm: RSA
     encoding: PKCS1
