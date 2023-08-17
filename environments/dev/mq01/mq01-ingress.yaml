@@ -16,3 +16,11 @@ spec:
                 name: mq01-ibm-mq
                 port:
                   number: 1414
+          - path: /web
+            pathType: Prefix
+            backend:
+              service:
+                name: mq01-ibm-mq
+                port:
+                  number: 9443
+                  
