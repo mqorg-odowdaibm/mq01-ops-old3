@@ -24,6 +24,7 @@ spec:
     size: 4096
   usages:
     - server auth
+    - client auth
   privateKey:
     rotationPolicy: Always
     
