@@ -6,7 +6,7 @@ metadata:
 spec:
   dnsNames:
     - dummy.domain.com
-  type: opaque
+#  type: opaque
   secretName: mq01-qmgr-cert
   issuerRef:
     name: mq-selfsigned-issuer
