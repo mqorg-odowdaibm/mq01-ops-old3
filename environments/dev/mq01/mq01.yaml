@@ -9,7 +9,7 @@ spec:
     use: NonProduction
   pki:
     keys:
-    - name: default
+    - name: mq01-qmgr-cert
       secret:
         secretName: mq01-qmgr-cert
         items:
