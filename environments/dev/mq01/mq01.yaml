@@ -47,10 +47,10 @@ spec:
       timeoutSeconds: 3
     resources:
       limits:
-        cpu: "200ms"
+        cpu: "200m"
         memory: 1Gi
       requests:
-        cpu: "150ms"
+        cpu: "150m"
         memory: 1Gi
     availability:
       type: SingleInstance
