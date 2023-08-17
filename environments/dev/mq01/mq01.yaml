@@ -7,6 +7,14 @@ spec:
     accept: true
     license: L-YBXJ-ADJNSM
     use: NonProduction
+  pki:
+    keys:
+    - name: default
+      secret:
+        secretName: mq01-qmgr-cert
+        items:
+          - tls.key
+          - tls.crt
   queueManager:
     debug: false
     image: image-registry.openshift-image-registry.svc:5000/mq01-ci/mq01:0.0.1
