@@ -71,8 +71,8 @@ spec:
         env:
         - name: MQSNOAUT
           value: "yes"
-        - name: MQ_ENABLE_EMBEDDED_WEB_SERVER
-          value: "true"
+#        - name: MQ_ENABLE_EMBEDDED_WEB_SERVER
+#          value: "true"
   terminationGracePeriodSeconds: 30
   tracing:
     agent: {}
@@ -81,4 +81,4 @@ spec:
     namespace: ""
   version: 9.3.2.0-r1
   web:
-    enabled: false
+    enabled: true
