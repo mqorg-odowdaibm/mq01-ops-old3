@@ -5,8 +5,8 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-YBXJ-ADJNSM
-    use: NonProduction
+    license: L-APIG-CAUEQC
+    use: Development
   pki:
     keys:
     - name: mq01cert
