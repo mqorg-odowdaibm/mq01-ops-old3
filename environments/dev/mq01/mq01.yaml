@@ -52,6 +52,9 @@ spec:
       requests:
         cpu: "50m"
         memory: 1Gi
+      ports:
+        - containerPort: 9443
+          protocol: TCP
     availability:
       type: SingleInstance
     storage:
