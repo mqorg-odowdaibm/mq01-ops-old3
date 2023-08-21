@@ -7,7 +7,8 @@ spec:
     accept: true
 #    license: L-APIG-CAUEQC
     license: L-UPFX-8MW49T
-    use: Development
+#    use: Development
+    use: Production
   pki:
     keys:
     - name: mq01cert
