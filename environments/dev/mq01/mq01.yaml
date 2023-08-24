@@ -5,18 +5,8 @@ metadata:
 spec:
   license:
     accept: true
-#    license: L-APIG-CAUEQC
-    license: L-UPFX-8MW49T
-#    use: Development
-    use: Production
-  pki:
-    keys:
-    - name: mq01cert
-      secret:
-        secretName: mq01-qmgr-cert
-        items:
-          - tls.key
-          - tls.crt
+    license: L-YBXJ-ADJNSM
+    use: NonProduction
   queueManager:
     debug: false
     image: image-registry.openshift-image-registry.svc:5000/mq01-ci/mq01:0.0.1
@@ -49,10 +39,10 @@ spec:
       timeoutSeconds: 3
     resources:
       limits:
-        cpu: "300m"
+        cpu: "0.2"
         memory: 1Gi
       requests:
-        cpu: "50m"
+        cpu: "0.1"
         memory: 1Gi
     availability:
       type: SingleInstance
@@ -73,14 +63,14 @@ spec:
         env:
         - name: MQSNOAUT
           value: "yes"
-#        - name: MQ_ENABLE_EMBEDDED_WEB_SERVER
-#          value: "true"
+        - name: MQ_ENABLE_EMBEDDED_WEB_SERVER
+          value: "true"
   terminationGracePeriodSeconds: 30
   tracing:
     agent: {}
     collector: {}
     enabled: false
     namespace: ""
-  version: 9.3.2.0-r1
+  version: 9.3.3.0-r1
   web:
-    enabled: true
+    enabled: false
