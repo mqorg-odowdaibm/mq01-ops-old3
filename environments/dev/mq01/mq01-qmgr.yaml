@@ -9,7 +9,7 @@ spec:
     use: NonProduction
   queueManager:
     debug: false
-    image: image-registry.openshift-image-registry.svc:5000/mq01-ci/mq01:.0.2
+    image: image-registry.openshift-image-registry.svc:5000/mq01-ci/mq01:0.0.1
     imagePullPolicy: Always
     livenessProbe:
       failureThreshold: 1
