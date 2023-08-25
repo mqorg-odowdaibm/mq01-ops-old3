@@ -2,6 +2,7 @@ apiVersion: v1
 data:
   mq01.mqsc: |
     DEFINE QLOCAL(IBM.DEMO.Q) BOQNAME(IBM.DEMO.Q.BOQ) BOTHRESH(3) REPLACE
+    DEFINE QLOCAL(IBM.DEMO.Q.2) BOQNAME(IBM.DEMO.Q.BOQ) BOTHRESH(3) REPLACE
     DEFINE QLOCAL(IBM.DEMO.Q.BOQ) REPLACE
     * Use a different dead letter queue, for undeliverable messages
     DEFINE QLOCAL('DEV.DEAD.LETTER.QUEUE') REPLACE
